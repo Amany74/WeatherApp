@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session 10</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+</head>
+<body onload="done()">
+    
+    <div id="loading"> 
+            <div class="container-fluid text-center">
+                <span id="loading-spinner" class="loader"></span>
+                <h4 class="text-white">Getting weather Data ..</h4>
+            </div>
+    </div>
+<section id="main-section">
+    <div class="nav">
+        <h2>Weather Dashboard</h2>
+        <h2 id = "dash-year">2023</h2>
+    </div>
+    <main>
+        <div class="left">
+            <div class="search">
+                <i class="fas fa-thermometer-half text-white fs-5"></i>
+                <input type="search" value="" name="weather-search" id="weather-search" placeholder="ex: Alexandria">
+                
+                <button id="searchBtn">
+                    <i class="fas fa-search text-white fs-5"></i>
+
+                </<button>
+            </div>
+
+            <div class="temperature">
+                    <h2 id="left-temp" class="degree">
+                        23 c
+                    </h2>
+                    <h2 class="plusminus">
+                        +/- 3 <sup>o</sup> c
+                    </h2>
+            </div>
+            <h4 id="left-text" class="px-3 text-orange">
+                partly cloud - feels like
+            </h4>
+            <div class="wind-rain">
+                    <div class="degree">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-wind text-white fs-5 p-1"></i>
+                            <h2 id="left-wind">8%</h2>
+                        </div>
+                    </div>
+                    <h2 class="plusminus">
+                            wind degree
+                    </h2>
+            </div>
+            <div class="wind-rain">
+                    <div class="degree">
+                    <div class="d-flex">
+                    <i class="fa-solid fa-cloud-rain text-white fs-5 p-1"></i>
+                    <h2 id="left-rain">10%</h2>
+
+                    </div>
+                    </div>
+                    <h2 class="plusminus">
+                            chance of rain
+                    </h2>
+            </div>
+            <div class="wind-rain">
+                    <div class="degree">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-droplet text-white fs-5 p-1"></i>
+                        <h2 id="left-humidity">8%</h2>
+                        </div>
+                    </div>
+                    <h2 class="plusminus">
+                            humidity degree
+                    </h2>
+            </div>
+        
+            <div class="wind-rain">
+                    <div class="degree">
+                        <div class="d-flex">
+                        <i class="fa-solid fa-cloud text-white fs-5 p-1"></i>
+                        <h2 id="left-cloud">20</h2>
+                        </div>
+                    </div>
+                    <h2 class="plusminus">
+                            cloud cover
+                    </h2>
+            </div>
+            <div class="text-white">
+                    <h2 id="left-city">
+                        Alexandria
+                    </h2>
+                    <p id="left-description" class="fs-5 text-grayed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam recusandae et illo impedit maiores laboriosam ipsa praesentium repellat nam eos.</p>
+                    
+            </div>
+
+        </div>
+        <div class="right">
+            Weather Forecast
+            <div class="right-content">
+                <div class="right-top">
+                    <div class="top-left d-flex flex-column">
+                        <h2 class="right-text-1"> Storm  </h2>
+                        <h2 class="right-text-2">  with Heavy rain </h2>
+                    </div>
+                    <div id="weather-icon">
+                        <img id="weather-icon-img" src="" alt="">
+                    </div>
+
+                </div>
+
+                <div class="right-date">
+                    <h6 id="right-date">October 13, 2014 11:13:00</h6>
+                </div>
+                <div class="right-desc">
+                    <h1 id="right-temp" class="d-inline">17 c </h1> <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, repellendus.</p>
+                    
+                </div>
+                <div id="hourly">
+                    <h4 class="text-uppercase px-3 text-orange">
+                        hourly
+                    </h4>
+                    <div class="hourly-content">
+                        <div id="hours-row" class="row">
+                        </div>
+                    </div>  
+                </div>
+                <div class="four-days">
+                    <h4 class="text-uppercase px-3 text-orange my-3">
+                        futuer forecast
+                    </h4>
+
+                <div class="four-days-content">
+                    <div id="days-row" class="row">
+                    
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </main>
+    <div class="footer">
+        <h2 id="dash-degree">17</h2>
+        <h2 id="dash-city">Alexandria City</h2>
+
+    </div>
+</section>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
