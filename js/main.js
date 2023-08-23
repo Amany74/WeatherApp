@@ -216,7 +216,8 @@ inputBtn.addEventListener('input' , function(){
 
 // get user location to display it's weather
 let getLocation = ()=>{
-    fetch("https://api.geoapify.com/v1/ipinfo?apiKey=7ca6e0d080344fbeba4ecbaa41b020b3", requestOptions)
+    let k = "7ca6e0d080344fbeba4ecbaa41b020b3";
+    fetch(`https://api.geoapify.com/v1/ipinfo?apiKey=${k}`, requestOptions)
     .then(response => response.json())
     .then(result => {
         daysForecast(result.city.name);
